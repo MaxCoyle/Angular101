@@ -4,13 +4,14 @@
         <title>Angular 101</title>
         <script type="text/javascript" src="node_modules/angular/angular.js"></script>
         <script type="text/javascript" src="app/app.js"></script>
-        <script type="text/javascript" src="app/service.js"></script>
-        <script type="text/javascript" src="app/controller.js"></script>
+        <script type="text/javascript" src="app/testService.js"></script>
+        <script type="text/javascript" src="app/testController.js"></script>
     </head>
 
     <body data-ng-app="angular101" ng-controller="testController">
         <div>
-            <p> {{text}} </p>
+            <h1>This text is in the the defualt index.html file!</h1>
+           <test-directive></test-directive>
         </div>
     </body>
 </html>
