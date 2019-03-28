@@ -1,0 +1,7 @@
+{
+  "name": "Angular 101",
+  "version": "1.0.1",
+  "dependencies": {
+    "angular": "^1.6.4",    
+  }
+}
