@@ -1,1 +1,5 @@
 node_modules/
+app/newService.js.map
+app/newService.js
+app/newComponent.js.map
+app/newComponent.js
