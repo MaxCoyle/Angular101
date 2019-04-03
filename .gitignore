@@ -7,3 +7,4 @@ app/newService.spec.js.map
 app/newService.spec.js
 app/message.js.map
 app/message.js
+.tscache/
