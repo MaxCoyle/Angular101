@@ -21,7 +21,7 @@ namespace angular101 {
     export class NewController implements INewController {
         public static $inject = ["newService"];
         public newService: angular101.INewService;
-        public message: string;
+        public message: string = "";
 
         constructor(newService: angular101.INewService) {            
             this.newService = newService;
