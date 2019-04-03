@@ -1,4 +1,4 @@
-describe('testService factory', function() {
+describe('Test Service Factory', function() {
     var testService;  
     
     beforeEach(angular.mock.module('angular101'));
@@ -7,7 +7,7 @@ describe('testService factory', function() {
         testService = _testService_;
     }));  
     
-    it('should match', function() {
+    it('message should match', function() {
       var expected = "This message has come from the test service!";
       var actual = testService.getMessage();
       expect(expected).toEqual(actual);

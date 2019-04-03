@@ -1,4 +1,4 @@
-describe('Users factory', function() {
+describe('Users Factory', function() {
     var Users;
   
     // Before each test load our api.users module
@@ -10,7 +10,7 @@ describe('Users factory', function() {
     }));
   
     // A simple test to verify the Users factory exists
-    it('should exist', function() {
+    it('user factory should exist', function() {
       expect(Users).toBeDefined();
     });
 });
