@@ -1,11 +1,19 @@
 {
-  "name": "Angular 101",
+  "name": "angular.101",
   "version": "1.0.1",
   "dependencies": {
     "angular": "^1.6.4"
   },
   "devDependencies": {
     "@types/angular": "^1.6.54",
+    "angular-mocks": "^1.6.9",
+    "angular-ui-router": "^1.0.22",
+    "grunt": "^1.0.4",
+    "grunt-karma": "^3.0.1",
+    "jasmine": "^3.3.1",
+    "karma": "^4.0.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
     "typescript": "^3.3.4000"
   }
 }
