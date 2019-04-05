@@ -21,11 +21,9 @@ describe('New Service Factory', () => {
 
     describe('tests with promises', () => {
         var $q: ng.IQService, $rootScope : ng.IRootScopeService;
-        // , $provide: ng.auto.IProvideService, 
-        // deferred: ng.IDeferred<{}>, mockedDeferred: ng.IDeferred<{}>;
 
         var expectedMessage: angular101.Message =
-        new angular101.Message("This message, built with a constructor, has come from the new service!Via a promise!!!");        
+            new angular101.Message("This message, built with a constructor, has come from the new service!Via a promise!!!");        
 
         beforeEach(angular.mock.module("angular101"));
         
