@@ -27,14 +27,14 @@ namespace angular101 {
             return this.message.text;
         }
 
-        public getMessageViaPromise(): ng.IPromise<{}> {
+        public getMessageViaPromise(): ng.IPromise<string> {
             const deferred = this.q.defer();
             if (this.message.text.length > 0) {
                 deferred.resolve(this.message.text.concat("Via a promise!!!"));
             } else {
                 deferred.reject("Error : condition not satisfied");
             }
-            return deferred.promise;
+            return deferred.promise as ng.IPromise<string>;
         }
     }
 
