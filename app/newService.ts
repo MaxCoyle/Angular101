@@ -2,9 +2,9 @@ namespace angular101 {
     
     export interface INewService {
         getMessage(): string;
-        getMessageViaPromise(aCondition: boolean): ng.IPromise<{}>;
+        getMessageViaPromise(): ng.IPromise<{}>;
     }
-    
+
     export class NewService implements INewService {
         public static instance():
             (q: ng.IQService) => INewService {
@@ -27,9 +27,9 @@ namespace angular101 {
             return this.message.text;
         }
 
-        public getMessageViaPromise(aCondition: boolean): ng.IPromise<{}> {
+        public getMessageViaPromise(): ng.IPromise<{}> {
             const deferred = this.q.defer();
-            if (aCondition) {
+            if (this.message.text.length > 0) {
                 deferred.resolve(this.message.text.concat("Via a promise!!!"));
             } else {
                 deferred.reject("Error : condition not satisfied");

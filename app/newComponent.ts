@@ -31,7 +31,7 @@ namespace angular101 {
 
         public $onInit = () => {
             this.message = this.newService.getMessage();
-            this.newService.getMessageViaPromise(true).then (
+            this.newService.getMessageViaPromise().then (
                 (response: any) => {
                     this.secondaryMessage = response;
                 },
